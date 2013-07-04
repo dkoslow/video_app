@@ -17,9 +17,9 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: educational-video-app_development
+  database: educational_video_app_development
   pool: 5
-  username: educational-video-app
+  username: dankoslow
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -46,15 +46,15 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: educational-video-app_test
+  database: educational_video_app_test
   pool: 5
-  username: educational-video-app
+  username: dankoslow
   password:
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: educational-video-app_production
+  database: educational_video_app_production
   pool: 5
-  username: educational-video-app
+  username: dankoslow
   password:
