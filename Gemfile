@@ -24,6 +24,10 @@ group :development, :test do
   # gem 'guard-spork' # Use guard with spork -> Not ready for Rails 4 yet
 end
 
+group :test do
+  gem 'capybara'
+end
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
