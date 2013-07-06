@@ -37,7 +37,7 @@ describe User do
   describe "when email address in not unique" do
     before do
       user_with_same_email = @user.dup
-      user_with_same_email.email.upcase
+      user_with_same_email.email.upcase!
       user_with_same_email.save
     end
 
