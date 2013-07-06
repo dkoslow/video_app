@@ -12,6 +12,11 @@ gem 'sass-rails', '~> 4.0.0' # Use SCSS for stylesheets
 gem 'turbolinks' # Turbolinks makes following links in your web application faster
 gem 'uglifier', '>= 1.3.0' # Use Uglifier as compressor for JavaScript assets
 
+group :development do
+  gem 'pry-rails' # Use pry for Rails console
+  gem 'pry-doc' # Add additional documentation to pry
+end
+
 group :development, :test do
   gem 'guard-rspec' # Use guard to automate tests
   gem 'rspec-rails' # Use rspec for testing
