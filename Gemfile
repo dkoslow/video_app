@@ -18,8 +18,8 @@ group :development do
 end
 
 group :development, :test do
-  gem 'guard-rspec' # Use guard to automate tests
   gem 'rspec-rails' # Use rspec for testing
+  gem 'guard-rspec' # Use guard to automate tests
   # gem 'spork' # Use spork for speeding up tests -> Not ready for Rails 4 yet
   # gem 'guard-spork' # Use guard with spork -> Not ready for Rails 4 yet
 end
