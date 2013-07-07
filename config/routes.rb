@@ -1,9 +1,5 @@
 EducationalVideoApp::Application.routes.draw do
-  get   "users/new"
-  get   "users/show"
-  get   "users/edit"
-  patch "users/update"
-  post  "users/create"
+  resources :users, only: [:show, :new, :create, :edit, :update]
 
   match '/signup', to: 'users#new', via: 'get'
 
