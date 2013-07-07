@@ -1,9 +1,9 @@
 EducationalVideoApp::Application.routes.draw do
-  get "users/new"
-  get "users/show"
-  get "users/edit"
-  get "users/update"
-  get "users/create"
+  get   "users/new"
+  get   "users/show"
+  get   "users/edit"
+  patch "users/update"
+  post  "users/create"
 
   match '/signup', to: 'users#new', via: 'get'
 
