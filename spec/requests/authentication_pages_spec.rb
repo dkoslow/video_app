@@ -10,13 +10,13 @@ describe "Authentication pages" do
     describe "without valid credentials" do
       before { click_button "Sign in" }
 
-      it { should have_error_message('Invalid') }
+      it { should have_link("Sign in", href: signin_path) }
     end
 
     describe "with valid credentials" do
-      user = User.create(first_name: "John", last_name: "Doe",
+      let(:user) { User.create(first_name: "John", last_name: "Doe",
                        email: "john@example.com", password: "ohaihai",
-                       password_confirmation: "ohaihai")
+                       password_confirmation: "ohaihai") }
       before do
         fill_in "Email",    with: user.email
         fill_in "Password", with: user.password
