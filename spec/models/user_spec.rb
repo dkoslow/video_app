@@ -70,4 +70,12 @@ describe User do
       it { should_not be_valid }
     end
   end
+
+  describe "User auth" do
+
+    describe "set auth token on user creation" do
+      before { @user.save }
+      its(:auth_token) { should_not be_blank }
+    end
+  end
 end
